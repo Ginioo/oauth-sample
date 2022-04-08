@@ -20,12 +20,12 @@ router.get('/logout', function (req, res, next) {
 
 router.get('/callback', function (req, res, next) {
   const { code } = req.query;
-  res.render('callback.ejs', { title: 'Logged in successfully!', code });
+  res.render('callback.ejs', { title: 'Broadcaster', code });
 });
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index.ejs', { title: 'Broadcaster' });
 });
 
 module.exports = router;
