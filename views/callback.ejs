@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <h1>Oauth sample</h1>
+  <p>
+    Logged in successfully!
+  </p>
+  <p>
+    code: <%= code %>
+  </p>
+  <button id="logout-btn">Log out</button>
+
+  <script>
+    let button = document.querySelector('#logout-btn');
+    button.addEventListener('click', (e) => {
+      window.location.href = '/logout';
+    });
+  </script>
+</body>
+
+</html>
