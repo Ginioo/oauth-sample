@@ -7,14 +7,15 @@
 
 <body>
   <h1><%= title %></h1>
-  <p>Logged in successfully!</p>
+  <h2>Subscribe successfully!</h2>
   <p>code: <%= code %></p>
-  <button id="logout-btn">Log out</button>
+  <p>token: <%= token %></p>
+  <button id="btn"><%= btnText %></button>
 
   <script>
-    let button = document.querySelector('#logout-btn');
+    let button = document.querySelector('#btn');
     button.addEventListener('click', (e) => {
-      window.location.href = '/logout';
+      window.location.href = '/';
     });
   </script>
 </body>
